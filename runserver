@@ -1,0 +1,11 @@
+#!/usr/bin/php
+<?php
+   require_once(__DIR__."./env/Server.php");
+   use env\Server;
+
+   $server = new Server();
+   $server->host ="localhost"; //setting your server
+   $server->port =4500; //setting your port
+   $server->run();
+
+?> 

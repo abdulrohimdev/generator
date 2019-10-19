@@ -1,0 +1,8 @@
+#!/usr/bin/php
+<?php
+   require_once(__DIR__."./env/Command.php");
+   use env\Command;
+   $command = new Command();
+   $command->path =__DIR__."./../application";
+   $command->make($argv)->exec(); 
+?> 
