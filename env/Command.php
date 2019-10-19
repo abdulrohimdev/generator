@@ -89,7 +89,7 @@ class Command
     {
         $file  = ucwords($this->file);
         $data  = "<?php\ndefined('BASEPATH') OR exit('No direct script access allowed');";
-		$data .= "\n\nclass ".ucwords($this->file)." extends CI_Controller \n{";
+		$data .= "\n\nclass ".ucwords($this->getPluralPrase($this->file,2))." extends CI_Controller \n{";
 		$data .= "\n	public function __construct()\n";
 		$data .= "	{\n";
 		$data .= "		parent::__construct();\n";
@@ -107,10 +107,10 @@ class Command
         }
 
         $data .= "}";
-        $path = $this->path."/controllers/".ucwords($this->file).".php";
+        $path = $this->path."/controllers/".ucwords($this->getPluralPrase($this->file,2)).".php";
         if(file_exists($path))
         {
-            $this->message = "Error: File ". ucwords($this->file) ." Controller already exists";
+            $this->message = "Error: File ". ucwords($this->getPluralPrase($this->file,2)) ." Controller already exists";
         }
         else
         {
