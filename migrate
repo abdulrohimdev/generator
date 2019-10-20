@@ -1,0 +1,8 @@
+#!/usr/bin/php
+<?php
+   require_once(__DIR__."./env/MigrateCommand.php");
+   use env\MigrateCommand;
+   $command = new MigrateCommand();
+   $command->path =__DIR__."./migration";
+   $command->make($argv)->exec(); 
+?> 

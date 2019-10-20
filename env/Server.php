@@ -1,6 +1,6 @@
 <?php
     namespace env;
-    class server
+    class Server
     {
         var $host;
         var $port;

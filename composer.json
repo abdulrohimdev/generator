@@ -1,0 +1,8 @@
+{
+    "require": {
+        "illuminate/database": "^6.3",
+        "illuminate/events": "^6.3",
+        "illuminate/console": "^6.3",
+        "illuminate/auth": "^6.3"
+    }
+}

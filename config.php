@@ -1,8 +1,9 @@
 <?php
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $dbnm = "eloquent";
-    $port = 3306;
-    $dbms = 'mysql';
+  $config = array(
+    "driver"   => "mysql",
+    "host"     => "localhost",
+    "database" => "",
+    "username" => "root",
+    "password" => ""
+  );
 ?>

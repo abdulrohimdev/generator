@@ -42,4 +42,17 @@ your_project/
 4. if you want to use server development :
     just follow the syntax on command line : 
         php runserver
-        and then open your browser with address http://localhost:4500
+        and then open your browser with address http://localhost:3000
+
+
+5. How to create table from command,
+    before your create table via command, please setup your database in generator/config.php
+    and then :
+        write on command prompt like this:
+            php migrate modelname id:primarykey username:string_uniq role:enum_['admin','user]
+            php migrate up (if you want to migrate)
+            php migrate down (if you want to drop table)
+        and then check in folder migrate, the file migrate has been created, for documentation please check on laravel framework
+
+
+

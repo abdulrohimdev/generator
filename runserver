@@ -5,7 +5,7 @@
 
    $server = new Server();
    $server->host ="localhost"; //setting your server
-   $server->port =4500; //setting your port
+   $server->port =3000; //setting your port
    $server->run();
 
 ?> 
