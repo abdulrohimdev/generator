@@ -1,28 +1,28 @@
 # generator
 
-Generator ini digunakan untuk mempermudah pengembangan system berbasis web. Dengan menggunakan framework 3.x, generator ini bisa membuat sebuah Controller, Model, view, dan migration melalui command prompt.
+    Generator ini digunakan untuk mempermudah pengembangan system berbasis web. Dengan menggunakan framework 3.x, generator ini bisa membuat sebuah Controller, Model, view, dan migration melalui command prompt.
 
 
-Cara menggunakannya extract file generator-master.zip kemudian rename dengan nama folder generator.
-setelah itu pindahkan folder generator ke dalam projek anda, sejajar dengan folder application, system
-pathnya seperti ini namaprojek_anda/generator.
+    Cara menggunakannya extract file generator-master.zip kemudian rename dengan nama folder generator.
+    setelah itu pindahkan folder generator ke dalam projek anda, sejajar dengan folder application, system
+    pathnya seperti ini namaprojek_anda/generator.
 
-Periksa kembali php versi anda, generator ini hanya support untuk versi 7.x.
-untuk cara mengeceknya silahkan buka command prompt dan ketik kan php --version
-jika php --version tidak terbaca, coba anda pasang di environtment variables
+    Periksa kembali php versi anda, generator ini hanya support untuk versi 7.x.
+    untuk cara mengeceknya silahkan buka command prompt dan ketik kan php --version
+    jika php --version tidak terbaca, coba anda pasang di environtment variables
 
-caranya jika anda menggunakan xampp dan berada di disk C.
-cari folder xampp dan buka folder php, kemudian copy path address nya
-contoh seperti ini: C:\xampp\php
+    caranya jika anda menggunakan xampp dan berada di disk C.
+    cari folder xampp dan buka folder php, kemudian copy path address nya
+    contoh seperti ini: C:\xampp\php
 
-kemudian klik start, klik kanan computer pilih properties, kemudian klik advanced system setting
-kemudian klik juga Environtment Variables , pada users variable for admin cari variable path
-dan edit setelah itu tambahkan tanda ;C:\xampp\php; seperti ini.
+    kemudian klik start, klik kanan computer pilih properties, kemudian klik advanced system setting    
+    kemudian klik juga Environtment Variables , pada users variable for admin cari variable path
+    dan edit setelah itu tambahkan tanda ;C:\xampp\php; seperti ini.
 
-silahkan cek kembali di command prompt anda php --version.
-Jika versi dibawah 7 silahkan di update.
+    silahkan cek kembali di command prompt anda php --version.
+    Jika versi dibawah 7 silahkan di update.
 
-untuk melihat isi perintahnya coba ketik perintah tersebut : php new help 
+    untuk melihat isi perintahnya coba ketik perintah tersebut : php new help 
 
         contoh : php new controller:about index get update delete
                  about adalah nama controller sekaligus class
