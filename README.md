@@ -1,5 +1,5 @@
 # generator
-Generator :
+
 Generator ini digunakan untuk mempermudah pengembangan system berbasis web. Dengan menggunakan framework 3.x, generator ini bisa membuat sebuah Controller, Model, view, dan migration melalui command prompt.
 
 
@@ -23,31 +23,32 @@ silahkan cek kembali di command prompt anda php --version.
 Jika versi dibawah 7 silahkan di update.
 
 untuk melihat isi perintahnya coba ketik perintah tersebut : php new help 
-contoh : php new controller:about index get update delete
-            about adalah nama controller sekaligus class
-            index get update delete adalah nama method dari controller
 
-contoh buat model:
-        php new model:article resource
-        article adalah nama model sekaligus class nya, sedangkan resource adalah perintah crud di dalam model sudah di siapkan
+        contoh : php new controller:about index get update delete
+                 about adalah nama controller sekaligus class
+                 index get update delete adalah nama method dari controller
 
-contoh buat model ke dua tanpa resource
-        php new model:article get update delete
-        article adalah nama model sekaligus class model, sedangkan get update delete adalah nama method dari si model
+        contoh buat model:
+                php new model:article resource
+                article adalah nama model sekaligus class nya, sedangkan resource adalah perintah crud di dalam model sudah di siapkan
+
+        contoh buat model ke dua tanpa resource
+                php new model:article get update delete
+                article adalah nama model sekaligus class model, sedangkan get update delete adalah nama method dari si model
 
 
-contoh buat view
-        php new view:page.about.index
-        page adalah folder, about adalah sub folder under page dan index adalah file.php
-        jadi pathnya seperti ini views/page/about/index.php
+        contoh buat view
+                php new view:page.about.index
+                page adalah folder, about adalah sub folder under page dan index adalah file.php
+                jadi pathnya seperti ini views/page/about/index.php
 
-contoh menjalankan server development:
-        php runserver
-        server anda akan berjalan pada localhost:3000
+        contoh menjalankan server development:
+                php runserver
+                server anda akan berjalan pada localhost:3000
 
-contoh membuat sebuah tabel migration database di command prompt
-        silahkan buka file config.php partnya ada di generator/config.php
-        setting database sesuai yang anda mau. kemudian:
+        contoh membuat sebuah tabel migration database di command prompt
+                silahkan buka file config.php partnya ada di generator/config.php
+                setting database sesuai yang anda mau. kemudian:
 
         ketik : 
         php migrate user id:primarykey username:string_uniq password:string role:enum_['admin','user']
