@@ -1,4 +1,5 @@
 # generator
+Generator :
 Generator ini digunakan untuk mempermudah pengembangan system berbasis web. Dengan menggunakan framework 3.x, generator ini bisa membuat sebuah Controller, Model, view, dan migration melalui command prompt.
 
 
