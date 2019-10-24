@@ -2,7 +2,7 @@
   $config = array(
     "driver"   => "mysql",
     "host"     => "localhost",
-    "database" => "blog",
+    "database" => "famgath",
     "username" => "root",
     "password" => ""
   );

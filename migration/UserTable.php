@@ -7,12 +7,12 @@ class UserTable extends MyMigration
   {
     $this->createTable('users', function ($table) {
 
-      $table->increments('id');
+      $table->bigIncrements('id');
+      $table->string('name');
       $table->string('username')->unique();
       $table->string('password');
-      $table->string('email')->unique();
       $table->enum('role',['admin','user']);
-
+      $table->timestamps();
      
     });
 
